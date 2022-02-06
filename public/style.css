@@ -6,6 +6,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    overflow: auto;
 }
 body{
     background-color: rgb(230, 230, 230);
@@ -38,7 +39,7 @@ input[type="submit"]{
 .list{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
 }
 .list > div{
     flex: 1;
@@ -48,6 +49,7 @@ input[type="submit"]{
     border-radius: 4px;
     text-align: center;
     word-wrap: break-word;
+    width: 50%;
 }
 i{
     color: rgb(5, 81, 180);
