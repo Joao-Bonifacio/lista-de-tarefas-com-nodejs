@@ -13,16 +13,19 @@ body{
 h1{
     text-align: center;
     padding: 20px;
+    border-bottom: 1px solid rgba(144, 194, 228, 0.473);
+}
+input{
+    padding: 2px;
+    border: 1px solid rgb(201, 195, 195);
+    margin-top: 15px;
 }
 input[type="text"]{
     width: 130px;
-    padding: 2px;
-    border: 1px solid rgb(201, 195, 195);
+    border-radius: 3px;
 }
 input[type="submit"]{
-    padding: 2px;
     border-radius: 3px;
-    border: 1px solid rgb(201, 195, 195);
 }
 .tarefas{
     background-color: white;
@@ -39,9 +42,12 @@ input[type="submit"]{
 }
 .list > div{
     flex: 1;
-    background-color: azure;
+    background-color: rgb(159, 230, 230);
     margin: 2px;
     padding: 10px 2px;
     border-radius: 4px;
     min-width: 120px;
+}
+i{
+    color: rgb(5, 81, 180);
 }
