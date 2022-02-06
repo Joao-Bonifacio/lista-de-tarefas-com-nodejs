@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Primeiro projeto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="tarefas">
+        <form action="/" method="post">
+            <p>
+                <label for="tar">Adicionar tarefa:</label> <input type="text" name="task" id="tar">
+                <input type="submit" name="action" value="inserir">
+            </p>
+        </form>
+    </div>
+    <div class="tarefas list"><% for (let i = 0; i < listTarefas.length; i++) { %>
+        <div>*<%= listTarefas[i]%> | <a href=<%="/delete/"+i%>><i class="fas fa-trash"></i></a></div>
+    <%} %></p>
+</body>
+</html>

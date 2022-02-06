@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgb(230, 230, 230);
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+input[type="text"]{
+    width: 130px;
+    padding: 2px;
+    border: 1px solid rgb(201, 195, 195);
+}
+input[type="submit"]{
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid rgb(201, 195, 195);
+}
+.tarefas{
+    background-color: white;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.list > div{
+    flex: 1;
+    background-color: azure;
+    margin: 2px;
+    padding: 10px 2px;
+    border-radius: 4px;
+    min-width: 120px;
+}
