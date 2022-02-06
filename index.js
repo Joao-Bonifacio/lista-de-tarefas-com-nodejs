@@ -19,9 +19,6 @@ app.post('/',(req,res)=>{
 app.get('/',(req,res)=>{ //para renderizar o index do diretorio /views
     res.render('index',{listTarefas:tarefas})
 })
-app.get('/add',(req,res)=>{ //para renderizar o index do diretorio /views
-    res.render('index',{listTarefas:tarefas})
-})
 app.get('/delete/:id',(req,res)=>{ //para deletar (/:id == passar o n que foi passado na url)
     //deletenado os valores
     tarefas = tarefas.filter((val,index)=>{
